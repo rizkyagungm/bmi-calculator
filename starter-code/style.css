@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+}
+
+/* helper class */
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+  gap: 10.8rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid-translate {
+  width: 90%;
+  transform: translate(0%, 20%);
+
+  padding: 1.6rem;
+
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px 25px rgba(186, 223, 250, 0.205);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #fff;
+
+  height: 9.6rem;
+  padding: 0 6rem;
+
+  position: relative;
+  z-index: 1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #e7f5ff;
+  z-index: -1;
+  border-radius: 0 40px 0 0;
+}
+
+/* HERO */
+.section-hero {
+  background-color: #fff;
+  padding: 1.2rem 0 9.6rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.section-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  /* background-color: #e7f5ff; */
+  background: linear-gradient(
+    to bottom,
+    rgb(231, 245, 255),
+    rgb(198, 231, 255)
+  );
+  z-index: -1;
+  border-radius: 0 0 40px 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-text-box {
+  padding: 2.4rem 0;
+}
+
+.hero-title {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  margin-bottom: 3.6rem;
+}
+
+.hero-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* FORM BMI */
+.form {
+  padding: 4.8rem 4.8rem;
+  background-color: whitesmoke;
+  font-size: 1.4rem;
+
+  border-radius: 14px;
+  box-shadow: 0px 0px 24px 12px rgba(0, 0, 0, 0.121);
+}
+
+.form h4 {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.radios {
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.input-BMI {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.input {
+  width: 100%;
+  height: 4.2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  margin-top: 0.8rem;
+
+  font-size: 2rem;
+}
+
+input::placeholder {
+  color: rgb(85, 153, 255);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: end;
+}
+
+.result-wrap {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  /* align-items: center; */
+
+  padding: 3.6rem;
+  background-color: #228be6;
+  color: #fff;
+  border-radius: 10px 80px 80px 10px;
+}
+
+.result-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* margin-bottom: 1.8rem; */
+}
+
+.result-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.bmi-result {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/* Section What */
+.section-what {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.what-img {
+  width: 100%;
+  height: auto;
+}
+
+.what-bmi {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* align-items: center; */
+  gap: 2.4rem;
+}
+
+.what-title {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+
+.what-description {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #555;
+
+  padding-bottom: 2.4rem;
+}
+
+/* Section Feature */
+.section-feature {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: rgba(231, 245, 255, 0.5);
+  border-radius: 0 20px 20px 0;
+}
+
+.icon {
+  height: 6.4rem;
+  width: 6.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.feature-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Section GRID limitation for BMI */
+.section-limit {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 2.4rem;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.div2 {
+  grid-area: 1 / 4 / 2 / 6;
+  transform: translate(40%, 20%);
+  padding: 1.6rem 2.4rem;
+
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px 25px rgba(186, 223, 250, 0.205);
+}
+.div3 {
+  grid-area: 2 / 3 / 3 / 5;
+}
+.div4 {
+  grid-area: 2 / 5 / 3 / 7;
+}
+.div5 {
+  grid-area: 3 / 2 / 4 / 4;
+}
+.div6 {
+  grid-area: 3 / 4 / 4 / 6;
+}
+
+.limit-title {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.limit-description {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.limit-grid-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.limit-grid-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+}
+
+.limit-grid-description {
+  color: #555;
+  line-height: 1.4;
+  font-size: 1.6rem;
+}
+
+/* Media Query */
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    display: block;
+    text-align: center;
+    padding: 0 4.8rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .hero-title {
+    font-size: 6.2rem;
+    padding: 0 18rem;
+    letter-spacing: 1px;
+
+    margin-bottom: 3.6rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .form {
+    font-size: 1.8rem;
+    text-align: start;
+  }
+
+  .form h4 {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .result-title {
+    font-size: 2.2rem;
+  }
+
+  .result-description {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+
+  .bmi-result {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+}
