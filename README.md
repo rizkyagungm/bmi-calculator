@@ -30,7 +30,7 @@ this project is made from frontendmentor.io. [Frontend Mentor](https://www.front
 
 - `index.html`: The main HTML file for the calculator's structure.
 - `styles.css`: Contains the styling for the calculator.
-- `script.js`: Handles the BMI calculation logic and user interactions.
+- `app.js`: Handles the BMI calculation logic and user interactions.
 
 ## Technologies Used
 
